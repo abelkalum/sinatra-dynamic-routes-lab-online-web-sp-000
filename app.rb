@@ -12,9 +12,9 @@ class App < Sinatra::Base
 		(@number * @number).to_s
 	end
 	
-	get '/reversename/:name' do
-		@name = params[:name]
-		@name.reverse
+	get '/say/:number/:phrase' do
+		@phrase = params[:phrase]
+		@phrase.@number.times
 	end
 
 end
